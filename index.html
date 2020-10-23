@@ -34,10 +34,10 @@
               large
               href="https://github.com/jbl2024/latelier"
             >
-              <v-icon>
+              <v-icon left>
                 mdi-github
               </v-icon>
-              Open in github
+              Github repository
             </v-btn>
           </v-layout>
         </v-parallax>
@@ -50,6 +50,28 @@
             </v-img>
           </v-col>
         </v-row>
+      </section>
+      <v-divider></v-divider>
+
+
+      <section>
+        <h2 class="text-center features">Main features</h2>
+        <v-container class="features-list">
+          <v-row>
+            <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+              <v-card class="mx-auto" max-width="344"> 
+                <v-img :src="card.src" max-width="344"></v-img>              
+                <v-card-title>
+                  {{ card.title}}
+                </v-card-title>
+                
+                <v-card-subtitle>
+                  {{ card.subtitle }}
+                </v-card-subtitle>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
       </section>
     </v-main>
   </v-app>
@@ -70,7 +92,31 @@
     }),
     data () {
       return {
-        title: 'Your Logo'
+        cards: [{
+          title: "Kanban",
+          subtitle: "Kanban board of tasks",
+          src: "assets/tasks.png"
+        }, {
+          title: "BPMN",
+          subtitle: "BPMN editor",
+          src: "assets/bpmn.png"
+        }, {
+          title: 'Canvas',
+          subtitle: "Business canvas simple sheet",
+          src: "assets/canvas.png"
+        }, {
+            title: 'Meteo',
+            subtitle: "Weather style project report",
+            src: "assets/meteo.png"
+        }, {
+            title: 'Timeline',
+            subtitle: "Projects & tasks timeline views",
+            src: "assets/project-planning.png"
+        }, {
+            title: 'Meetings',
+            subtitle: "Meeting reports",
+            src: "assets/meeting.png"
+          }]
       }
     },
     methods: {

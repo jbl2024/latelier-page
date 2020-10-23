@@ -6,9 +6,20 @@
 .header-photo {
   position: relative;
   top: -150px;
-  margin-bottom: -200px;  
+  margin-bottom: -130px;  
 }
 
+.features {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+  margin: 32px;
+  margin-top: 48px;
+}
+
+.features-list {
+  margin-bottom: 48px;
+}
 
 .image {
   box-shadow:inset 0 1px 0 rgba(255,255,255,.6), 0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
