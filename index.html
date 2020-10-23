@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>L'atelier</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="assets/main.css" rel="stylesheet">
+</head>
+<body>
+ <div id="app">
+   <v-app light>
+    <v-content>
+      <section>
+        <div class="hero">
+          <v-layout
+            column
+            align-center
+            justify-center
+            class="white--text"
+          >
+            <h1 class="white--text display-2 text-center hero">l'atelier</h1>
+            <div class="grey--text lighten-1 subheading text-center sub-hero">Open source project management tool</div>
+            <v-btn
+              class="mt-12 mb-10"
+              outlined
+              dark
+              text
+              large
+              href="https://github.com/jbl2024/latelier"
+            >
+              <v-icon>
+                mdi-github
+              </v-icon>
+              Open in github
+            </v-btn>
+          </v-layout>
+        </v-parallax>
+      </section>
+
+      <section>
+        <v-layout
+          column
+          wrap
+          class="my-12"
+          align-center
+        >
+          <v-flex xs12 sm4 class="my-4">
+            <div class="text-center">
+              <h2 class="headline">La meilleure façon d'atteindre vos objectifs</h2>
+              <span class="subheading">
+                Au sein de votre service ou sur des thématiques transverses
+              </span>
+            </div>
+          </v-flex>
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap align-center>
+                <v-flex xs12 md4>
+                  <v-card flat class="transparent">
+                    <v-card-text class="text-center">
+                      <v-icon x-large class="primary--text">mdi-chart-timeline-variant</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-center">Planifier</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Décrivez les objects, définissez vos processus. Vous avez une vue consolidée de l'ensemble des projets que vous gérez.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card flat class="transparent">
+                    <v-card-text class="text-center">
+                      <v-icon x-large class="primary--text">mdi-account-group</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline">Collaborer</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Dites adieu aux silots et invitez tous les acteurs concernés.
+                      Créez et gérer les tâches ensemble, échangez en temps réel.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card flat class="transparent">
+                    <v-card-text class="text-center">
+                      <v-icon x-large class="primary--text">mdi-gauge</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-center">Piloter</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Estimez le temps nécessaire, suivez l'état du projet. Le tout en mode agile avec des outils vous permettant de savoir ou vous en êtes.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-flex>
+        </v-layout>
+      </section>
+
+      <section>
+        <v-parallax src="assets/hero-6.jpg" height="380">
+          <v-layout column align-center justify-center>
+            <div class="headline white--text mb-4 text-center">Suivez vos projets en temps réel</div>
+            <em>Embarquez vos collaborateurs</em>
+            <v-btn
+              class="mt-12"
+              color="blue lighten-2"
+              dark
+              large
+              href="https://ideal.ac-lyon.fr/latelier"
+            >
+              Démarrer
+            </v-btn>
+          </v-layout>
+        </v-parallax>
+      </section>
+
+      <section>
+        <v-container grid-list-xl>
+          <v-layout row wrap justify-center class="my-12">
+            <v-flex xs12 sm4>
+              <v-card flat class="transparent">
+                <v-card-title primary-title class="layout justify-left">
+                  <div class="headline">Passez de l'idée au projet</div>
+                </v-card-title>
+                <v-card-text class="layout justify-left">
+                  Grâce au business canvas, vous réfléchissez à l'ensemble des aspects importants de votre projet et permettez à tous les collaborateurs d'avoir le même niveau de connaissance.
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 offset-sm1>
+              <v-card flat class="transparent">
+                <v-img
+                  class="white--text align-end image"
+                  height="200px"
+                  src="assets/canvas.png"
+                >
+                </v-img>              
+                </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>      
+
+      <section>
+        <v-container grid-list-xl>
+          <v-layout row wrap justify-center class="my-12">
+            <v-flex xs12 sm4 >
+              <v-card flat class="transparent">
+                <v-img
+                  class="white--text align-end image"
+                  height="200px"
+                  src="assets/bpmn.png"
+                >
+                </v-img>              
+                </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 offset-sm1>
+              <v-card flat class="transparent">
+                <v-card-title primary-title class="layout justify-left">
+                  <div class="headline">Décrivez vos processus</div>
+                </v-card-title>
+                <v-card-text class="layout justify-left">
+                  L'éditeur BPMN intégré vous permet de décrire vos processus, y compris en mode collaboratif avec une mise à jour en temps réels. 
+                  Idéal pour les sessions de travail à distance par exemple.
+                </v-card-text>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+
+      <section>
+        <v-container grid-list-xl>
+          <v-layout row wrap justify-center class="my-12">
+            <v-flex xs12 sm4>
+              <v-card flat class="transparent">
+                <v-card-title primary-title class="layout justify-left">
+                  <div class="headline">Gérez vos tâches</div>
+                </v-card-title>
+                <v-card-text class="layout justify-left">
+                  Grâce à un tableau Kanban, vous avez une vue d'ensemble des actions à effectuer
+                  et vous pouvez vous concentrer sur l'exécution.
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 offset-sm1>
+              <v-card flat class="transparent">
+                <v-img
+                  class="white--text align-end image"
+                  height="200px"
+                  src="assets/tasks.png"
+                >
+                </v-img>              
+                </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+
+      <section>
+        <v-container grid-list-xl>
+          <v-layout row wrap justify-center class="my-12">
+            <v-flex xs12 sm4 >
+              <v-card flat class="transparent">
+                <v-img
+                  class="white--text align-end image"
+                  height="200px"
+                  src="assets/meteo.png"
+                >
+                </v-img>              
+                </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 offset-sm1>
+              <v-card flat class="transparent">
+                <v-card-title primary-title class="layout justify-left">
+                  <div class="headline">Prévenez les dérives</div>
+                </v-card-title>
+                <v-card-text class="layout justify-left">
+                  Grâce à la météo du projet, vous avez un état des lieux avec les tâches effectuées.
+                </v-card-text>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+
+      <section>
+        <v-container grid-list-xl>
+          <v-layout row wrap justify-center class="my-12">
+            <v-flex xs12 sm4>
+              <v-card flat class="transparent">
+                <v-card-title primary-title class="layout justify-left">
+                  <div class="headline">Gardez le cap</div>
+                </v-card-title>
+                <v-card-text class="layout justify-left">
+                  Les tâches peuvent être visualisées dans une vue planning afin de vous donner  un aperçu rapide et exhaustif.
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 offset-sm1>
+              <v-card flat class="transparent">
+                <v-img
+                  class="white--text align-end image"
+                  height="200px"
+                  src="assets/project-planning.png"
+                >
+                </v-img>              
+                </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+
+      <section>
+        <v-container grid-list-xl>
+          <v-layout row wrap justify-center class="my-12">
+            <v-flex xs12 sm4 >
+              <v-card flat class="transparent">
+                <v-img
+                  class="white--text align-end image"
+                  height="200px"
+                  src="assets/projects-planning.png"
+                >
+                </v-img>              
+                </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 offset-sm1>
+              <v-card flat class="transparent">
+                <v-card-title primary-title class="layout justify-left">
+                  <div class="headline">Prenez de la hauteur</div>
+                </v-card-title>
+                <v-card-text class="layout justify-left">
+                  Accédez à la vue d'ensemble de vos projets tout au long de l'année.
+                </v-card-text>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+
+
+      <v-footer color="primary" class="footer">
+        <v-layout row wrap align-center>
+          <v-flex xs12>
+            <div class="white--text ml-4 text-center">
+              L'atelier est un logiciel de gestion de projets libre dont l'hébergement est assuré par l'académie de Lyon et à destination de ses agents.
+            </div>
+            <div class="white--text ml-4 text-center body-2">
+              Vous pouvez accéder au code source et pourquoi pas devenir contributeur à l'adresse suivante : <a class="github" href="https://github.com/jbl2024/latelier">https://github.com/jbl2024/latelier</a>
+            </div>
+          </v-flex>
+        </v-layout>
+      </v-footer>
+    </v-content>
+  </v-app>
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+ <script>
+   new Vue({
+    el: '#app',
+    vuetify: new Vuetify({
+      theme: {
+        themes: {
+          light: {    
+            primary: "#455A64",
+            accent: "#F9A825"
+          }
+        }
+      }
+    }),
+    data () {
+      return {
+        title: 'Your Logo'
+      }
+    },
+    methods: {
+      show: function (url) {
+
+      }
+    }
+  })
+ </script>
+</body>
+</html>
