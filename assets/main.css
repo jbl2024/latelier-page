@@ -5,8 +5,8 @@
 }
 .header-photo {
   position: relative;
-  top: -150px;
-  margin-bottom: -130px;  
+  top: -100px;
+  margin-bottom: -70px;  
 }
 
 .features {
@@ -32,4 +32,8 @@ a.github {
 .footer {
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+#demo {
+  margin-bottom: 448px;
 }

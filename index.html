@@ -24,8 +24,9 @@
             justify-center
             class="white--text"
           >
-            <h1 class="white--text display-2 text-center">l'atelier</h1>
+            <h1 class="white--text display-2 mt-8 text-center">l'atelier</h1>
             <div class="grey--text lighten-1 subheading text-center sub-hero">Open source project management tool</div>
+            <div>
             <v-btn
               class="mt-12 mb-10"
               outlined
@@ -39,6 +40,17 @@
               </v-icon>
               Github repository
             </v-btn>
+            <v-btn
+              class="mt-12 mb-10"
+              outlined
+              dark
+              primary
+              large
+              href="#demo"
+            >
+              Try it
+            </v-btn>
+            </div>
           </v-layout>
         </v-parallax>
       </section>
@@ -71,6 +83,41 @@
               </v-card>
             </v-col>
           </v-row>
+        </v-container>
+      </section>
+      <v-divider></v-divider>
+
+
+      <section id="demo">
+        <h2 class="text-center features">Demonstration</h2>
+        <v-container >
+          <v-layout column align-center justify-center>
+            <strong>Warning: do not store sensitive data, use at your own risk</strong>
+            <div>
+              Demo server data is reset periodically.
+            </div>
+            <div>
+              Available credentials:
+            </div>
+            <div>
+              <ul>
+                <li>username: user1@localhost / password: user1</li>
+                <li>username: user2@localhost / password: user2</li>
+              </ul>
+            </div>
+            <v-btn class="mt-12 mb-12" dark primary large href="https://latelier.services.jbl2024.com">
+              Open demo server
+            </v-btn>
+          </v-layout>
+        </v-container>
+
+        <h2 class="text-center features">Installation instructions</h2>
+        <v-container>
+          <v-layout column align-center justify-center>
+            <v-btn class="mb-12" primary large href="https://github.com/jbl2024/latelier#installation">
+              Read instructions
+            </v-btn>
+          </v-layout>
         </v-container>
       </section>
     </v-main>
